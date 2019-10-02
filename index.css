@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Yandex-Sans-Text;
+    src: url('Yandex Sans Text-Regular.ttf');
+}
+
+@font-face {
+    font-family: Yandex-Sans-Display;
+    src: url('Yandex Sans Display-Regular.ttf');
+}
+
+body {
+    width: 1841px;
+    margin: 0;
+    height: 2567px;
+    display: grid;
+    grid-template-areas:
+            'header'
+            'main'
+            'footer';
+    grid-template-rows: 1fr 4fr 1.5fr;
+}
+
+header {
+    grid-area: header;
+    font-family: Yandex-Sans-Text;
+    font-weight: bold;
+    font-size: 80px;
+    margin: 9% 0 0 8%;
+}
+
+.header-title:first-letter {
+    color: red;
+}
+
+.header-title {
+
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
